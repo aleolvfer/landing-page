@@ -1,9 +1,9 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; }
 
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;600&display=swap');
 
 body {
-  font-family:  'Assistant', sans-serif;
+  font-family:  'Open Sans', sans-serif;
+  background-color: #f0f0f0;
 }
 
 .cabecalho-principal .container {
@@ -80,15 +80,13 @@ body {
 .conteudo-principal .div-banner .banner-box a {
   border: 1px solid #525252;
   color: #525252;
-  width: 230px;
-  height: 60px;
 
   font-weight: 800;
   text-transform: uppercase;
   cursor: pointer;
   border-radius: 1px;
   margin-right: 20px;
-  padding: 20px 30px;
+  padding: 15px 40px;
 }
 
 .conteudo-principal .div-banner .banner-box img {
@@ -126,7 +124,6 @@ body {
   justify-content: center;
 
   padding: 80px 0;
-  background-color: #f0f0f0;
 }
 
 .conteudo-principal .div-phone .phone-box {
@@ -153,6 +150,7 @@ body {
 
 .conteudo-principal .div-phone .phone-box ul li {
   margin: 20px 0;
+  font-weight: bold;
 }
 
 .conteudo-principal .div-phone .phone-box ul img {
@@ -177,7 +175,7 @@ body {
   font-weight: 800;
 
   width: 230px;
-  height: 60px;
+  height: 50px;
 
   display: flex;
   flex-direction: row;
@@ -191,4 +189,127 @@ body {
 
 .conteudo-principal .div-phone .phone-box a {
   cursor: pointer;
+}
+
+.conteudo-principal .div-services {
+  background-color: #41C27D;
+  padding: 45px 0;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteudo-principal .div-services .services-box {
+  width: 20%;
+  height: 200px;
+  padding: 35px 50px;
+  text-align: center;
+  color: #f5f5f5;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.conteudo-principal .div-services .services-box h3 {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+}
+
+.conteudo-principal .quote {
+  color: #6E6C6C;
+  text-align: center;
+  line-height: 30px;
+
+  padding: 80px 0 40px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.conteudo-principal .quote p {
+  width: 50%;
+}
+
+.conteudo-principal .quote p:last-child {
+  font-size: 14px;
+}
+
+.conteudo-principal .quote cite {
+  text-transform: uppercase;
+  font-weight: 800;
+  height: 20px;
+  margin-top: 30px;
+  color: #525252;
+}
+
+.conteudo-principal .div-mail {
+  background-color: #41C27D;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conteudo-principal .div-mail p {
+  color: #f0f0f0;
+  margin: 80px 0 20px 0;
+}
+
+.conteudo-principal .div-mail .mail {
+  margin: 20px 0 80px 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.conteudo-principal .div-mail .mail input {
+  width: 300px;
+  padding: 12px;
+  border: none;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: #41C27D;
+}
+
+.conteudo-principal .div-mail .mail span {
+  background-color: #fff;
+  height: 39px;
+  width: 40px;
+  border: none;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  
+  display: flex;
+  align-items: center;
+}
+
+.rodape-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rodape-principal img {
+  margin: 80px 0 25px 0;
+}
+
+.rodape-principal p {
+  margin: 25px 0 60px 0;
+  color: #6E6C6C;
+}
+
+.rodape-principal p span {
+  font-weight: bold;
 }
