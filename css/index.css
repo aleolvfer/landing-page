@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; }
 
 
@@ -6,15 +7,19 @@ body {
   background-color: #f0f0f0;
 }
 
-.cabecalho-principal .container {
+.cabecalho-principal {
+  background-color: #41C27D;
+}
+
+.cabecalho-principal .div-header {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
-  width: 100%;
+  width: 75%;
   height: 130px;
-  background-color: #41C27D;
+  margin: auto;
 }
 
 .cabecalho-principal .nav {
@@ -24,7 +29,7 @@ body {
 
   cursor: pointer;
   color: #fff;
-  width: 400px;
+  width: 30%;
 }
 
 .cabecalho-principal .social-nav{
@@ -32,7 +37,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
 
-  width: 220px;
+  width: 15%;
 }
 
 .cabecalho-principal .social-nav a {
@@ -50,6 +55,7 @@ body {
 
 .conteudo-principal .div-banner {
   background-image: url('../img/banner.png');
+  background-repeat: no-repeat;
   height: 560px;
 
   display: flex;
@@ -58,7 +64,7 @@ body {
 }
 
 .conteudo-principal .div-banner .banner-box {
-  width: 580px;
+  width: 40%;
   height: 200px;
   margin-left: 280px;
 }
@@ -107,9 +113,9 @@ body {
   width: 70%;
 
   display: flex;
-  flex-direction: row;
   align-items: center;  
   justify-content: space-around;
+  flex-wrap: wrap;
   filter: grayscale(1);
 }
 
@@ -127,7 +133,7 @@ body {
 }
 
 .conteudo-principal .div-phone .phone-box {
-  width: 500px;
+  width: 35%;
   margin-left: 150px;
   color: #6E6C6C;
 }
@@ -159,7 +165,6 @@ body {
 }
 
 .conteudo-principal .div-phone .phone-box .btn-watch{
-  width: 500px;
   height: 60px;
 
   display: flex;
@@ -174,7 +179,7 @@ body {
   text-transform: uppercase;
   font-weight: 800;
 
-  width: 230px;
+  width: 45%;
   height: 50px;
 
   display: flex;
@@ -203,15 +208,15 @@ body {
 }
 
 .conteudo-principal .div-services .services-box {
-  width: 20%;
+  width: 25%;
   height: 200px;
-  padding: 35px 50px;
+  padding: 40px 35px;
   text-align: center;
   color: #f5f5f5;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -219,6 +224,10 @@ body {
   text-transform: uppercase;
   font-weight: 800;
   color: #fff;
+}
+
+.conteudo-principal .div-services .services-box p {
+  line-height: 25px;
 }
 
 .conteudo-principal .quote {
