@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; }
 
-
 body {
   font-family:  'Open Sans', sans-serif;
   background-color: #f0f0f0;
@@ -27,14 +26,14 @@ body {
 
   cursor: pointer;
   color: #fff;
-  width: 30%;
+  width: 350px;
 }
 
 .cabecalho-principal .social-nav{
   display: flex;
   justify-content: space-around;
 
-  width: 15%;
+  width: 160px;
 }
 
 .cabecalho-principal .social-nav a {
@@ -60,7 +59,7 @@ body {
 }
 
 .conteudo-principal .div-banner .banner-box {
-  width: 40%;
+  max-width: 560px;
   margin-left: 280px;
 }
 
@@ -82,6 +81,8 @@ body {
   border: 1px solid #525252;
   color: #525252;
 
+  max-width: 220px;
+  min-width: 220px;
   font-weight: 800;
   text-transform: uppercase;
   cursor: pointer;
@@ -127,7 +128,7 @@ body {
 }
 
 .conteudo-principal .div-phone .phone-box {
-  width: 35%;
+  width: 450px;
   margin-left: 150px;
   color: #6E6C6C;
 }
@@ -175,7 +176,7 @@ body {
   text-transform: uppercase;
   font-weight: 800;
 
-  width: 45%;
+  width: 220px;
   height: 50px;
 
   display: flex;
@@ -195,14 +196,11 @@ body {
   background-color: #41C27D;
   padding: 45px 0;
 
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
 }
 
 .conteudo-principal .div-services .services-box {
-  width: 25%;
   height: 190px;
   padding: 40px 35px;
   text-align: center;

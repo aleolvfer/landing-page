@@ -1,71 +1,75 @@
-@media screen and (max-width: 375px) {
-  .cabecalho-principal .div-header {
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  .cabecalho-principal .nav {
-    width: 100%;
-  }
-
-  .cabecalho-principal .social-nav {
-    width: 60%;
-  }
-  
+@media screen and (max-width: 1165px) {
   .conteudo-principal .div-banner {
     justify-content: center;
   }
 
   .conteudo-principal .div-banner .banner-box {
-    margin: 0px;
-    width: 90%;
-    text-align: center;
+    margin-left: 0;
+  }
+}
 
-    display: flex;
+.conteudo-principal .social-icons img {
+  margin: 0 20px;
+}
+
+
+@media screen and (max-width: 900px) {
+
+  .cabecalho-principal .div-header {
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
   }
-
-  .conteudo-principal .div-banner .banner-box a {
-    margin: 10px 20px;
-  }
-
-  .conteudo-principal .social-icons {
-    width: 90%;
-  }
-
 
   .conteudo-principal .div-phone {
     flex-direction: column;
   }
-
+  
   .conteudo-principal .div-phone .phone-box {
-    width: 90%;
-    margin-left: 0;
+    margin: 0;
   }
 
-  .conteudo-principal .div-phone .phone-image {
-    margin-right: 50px;
+  img.phone-image {
+    margin-right: 60px;
   }
 
-  .conteudo-principal .div-phone h2, .conteudo-principal .div-phone .phone-box > p{
+  .conteudo-principal .div-phone .phone-box h2 {
     text-align: center;
   }
 
-  .conteudo-principal .div-phone .phone-box .btn-watch a:first-child {
-    width: 60%;
+  .conteudo-principal .div-services {
+    grid-template-columns: 2fr 2fr;
   }
+}
 
-  .conteudo-principal .div-services .services-box {
-    width: 90%;
-    padding: 40px 0;
 
+
+@media screen and (max-width: 590px) {
+
+  .conteudo-principal .div-banner .banner-box {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+
+    padding: 0 40px;
+    text-align: center;
   }
 
-  .conteudo-principal .quote p {
-    width: 90%;
+  .conteudo-principal .div-banner .banner-box a {
+    margin-bottom: 20px;
+  }
+
+  .conteudo-principal .div-phone .phone-box {
+    width: 380px;
+  }
+
+  .conteudo-principal .div-services {
+    grid-template-columns: 2fr;
   }
 
 
+  @media screen and (max-width: 489px) {
+    .conteudo-principal .social-icons img {
+      margin: 0;
+    }
+  }
 }
