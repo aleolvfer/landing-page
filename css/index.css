@@ -10,6 +10,7 @@ body {
   max-width: 1680px;
   padding: 0 100px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 header {
@@ -28,7 +29,7 @@ header .alignment nav {
 header .alignment nav a {
   color: #ffffff;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 22px;
   transition: 0.5s;
 }
 header .alignment nav a:hover {
@@ -53,55 +54,62 @@ header .alignment .social-nav a {
 main .home-banner {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
-main .home-banner img {
-  width: 100%;
-  display: block;
-}
-main .home-banner .alignment {
-  width: 100%;
-  position: absolute;
+main .home-banner .div-banner {
   display: flex;
   align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-main .home-banner .alignment .content h1 {
-  font-size: 32px;
-  font-weight: 600;
+main .home-banner .div-banner .alignment {
+  width: 100%;
+}
+main .home-banner .div-banner .alignment .content {
+  max-width: 900px;
+  width: 100%;
+}
+main .home-banner .div-banner .alignment .content h1 {
+  font-weight: bold;
   text-transform: uppercase;
   color: #525252;
   letter-spacing: 3px;
+  font-size: 38px;
 }
-main .home-banner .alignment .content p {
-  font-size: 22px;
+main .home-banner .div-banner .alignment .content p {
+  font-size: 28px;
   color: #6E6C6C;
   margin: 50px 0;
-  line-height: 25px;
+  line-height: 42px;
 }
-main .home-banner .alignment .content .cta-banner {
+main .home-banner .div-banner .alignment .content .cta-banner {
   display: flex;
+  gap: 30px;
 }
-main .home-banner .alignment .content .cta-banner a {
-  padding: 15px 30px;
+main .home-banner .div-banner .alignment .content .cta-banner a {
+  padding: 20px 50px;
   border: 1px solid #525252;
   color: #6E6C6C;
-  margin-right: 20px;
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-main .home-banner .alignment .content .cta-banner a img {
+main .home-banner .div-banner .alignment .content .cta-banner a img {
   display: block;
   margin-right: 10px;
   width: 14px;
 }
 main .brands {
+  padding: 30px 0;
   background-color: #e6e6e6;
 }
 main .brands .alignment {
-  padding: 30px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -111,30 +119,30 @@ main .brands .alignment img {
   opacity: 20%;
 }
 main .vantages {
-  padding: 50px 0;
+  padding: 80px 0;
 }
 main .vantages .alignment {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 100px;
 }
 main .vantages .alignment .content {
   color: #6E6C6C;
-  width: 500px;
-  margin-left: 100px;
+  max-width: 650px;
 }
 main .vantages .alignment .content h1 {
-  font-size: 32px;
-  font-weight: 600;
+  font-weight: bold;
   text-transform: uppercase;
   color: #525252;
   letter-spacing: 3px;
+  font-size: 42px;
 }
 main .vantages .alignment .content > p {
-  font-size: 18px;
+  font-size: 22px;
   color: #6E6C6C;
   margin-top: 30px;
-  line-height: 25px;
+  line-height: 36px;
 }
 main .vantages .alignment .content ul {
   margin-top: 30px;
@@ -148,9 +156,10 @@ main .vantages .alignment .content ul li {
 main .vantages .alignment .content ul li img {
   width: 22px;
   margin-right: 20px;
+  font-size: 18px;
 }
 main .vantages .alignment .content .cta-watch {
-  margin-top: 30px;
+  margin-top: 40px;
   display: flex;
   align-items: center;
 }
@@ -169,7 +178,7 @@ main .vantages .alignment .content .cta-watch a:first-child img {
 }
 main .services {
   background-color: #41c27d;
-  padding: 80px;
+  padding: 80px 0;
   color: #f5f5f5;
 }
 main .services .alignment {
@@ -179,7 +188,7 @@ main .services .alignment {
   justify-content: space-around;
 }
 main .services .alignment .services-box {
-  width: calc(33.33% - 25px);
+  width: calc(33.33% - 90px);
   /* Defina a largura desejada e subtraia o gap */
   padding: 20px;
   box-sizing: border-box;
@@ -192,25 +201,33 @@ main .services .alignment .services-box img {
   margin-bottom: 25px;
 }
 main .services .alignment .services-box h3 {
+  font-size: 20px;
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 25px;
 }
+main .services .alignment .services-box P {
+  font-size: 18px;
+}
 main .quote {
-  padding: 80px;
+  padding: 80px 0;
   text-align: center;
   color: #6E6C6C;
 }
-main .quote blockquote {
+main .quote .alignment blockquote {
   line-height: 25px;
 }
-main .quote blockquote cite {
-  font-size: 18px;
+main .quote .alignment blockquote p {
+  font-size: 20px;
+  line-height: 36px;
+}
+main .quote .alignment blockquote cite {
+  font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
 }
-main .quote blockquote p:first-child {
+main .quote .alignment blockquote p:first-child {
   margin-bottom: 30px;
 }
 main .newsletter {
@@ -224,17 +241,29 @@ main .newsletter .alignment {
   align-items: center;
 }
 main .newsletter .alignment p {
+  font-size: 18px;
   margin-bottom: 30px;
 }
 main .newsletter .alignment form {
   display: flex;
+  justify-content: center;
+  width: 630px;
+}
+main .newsletter .alignment form input:nth-child(1) {
+  width: 100%;
 }
 main .newsletter .alignment form #email {
   padding: 12px 10px;
-  width: 400px;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
   border: 0;
+  color: #41c27d;
+}
+main .newsletter .alignment form #email::-moz-placeholder {
+  color: #41c27d;
+}
+main .newsletter .alignment form #email::placeholder {
+  color: #41c27d;
 }
 main .newsletter .alignment form #email:focus {
   outline: none;
